@@ -1,111 +1,24 @@
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bgimg-1 {
-  background-image: url("https://pbs.twimg.com/profile_banners/1033230421151035393/1535177515/1500x500");
-  min-height: 100%;
-}
-.bgimg-2 {
-  background-image: url("https://svs.gsfc.nasa.gov/vis/a010000/a010900/a010951/STILL1_576.jpg");
-  min-height: 400px;
-}
-.bgimg-3 {
-  background-image: url("./pia23645_pbd_main-16.jpg");
-  min-height: 400px;
-}
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
-}
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Vue Training</title>  
+  <link rel="stylesheet" href="styles.css"> 
+</head>  
 
-a{
-  text-decoration: none;
-  color: white;
-}
-</style>
-</head>
-<body>
+<body>  
 
-<div class="bgimg-1">
-  <div class="caption">
-  <span class="border">Bonjur Human!!</span>
-  </div>
-</div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Who Am I?</h3>
-  <p>Who Am I?, Well even i dont get the answer yet but sure i lies somewhere in between these things - penetration tester , web developer , Graphics desginer , Amaetur Astronomer. In a nut shell iam trying to be a versatile Inquisitive human living in small town in southern india.</p>
-</div>
+  <div id="app">
+		
+			<h1>
+			Hi There!</h1>
+			<h3>{{ email }}</h3>
 
-<div class="bgimg-2">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Skills</span>
-  </div>
-</div>
+	</div>
+	
+	  
+</body> 
 
-<div style="position:relative;">
-  <div style="color:white;background-color:#000;text-align:center;padding:50px 80px;text-align: justify;">
- <center><p>Googling</p></center>
-  </div>
-</div>
-
-<div class="bgimg-3">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Reach Me</span>
-  </div>
-</div>
-
-<div style="position:relative;">
-  <div style="color:white;background-color:#000;text-align:center;padding:50px 80px;text-align: justify;">
-  <center><p>Ping me at <a href = "mailto: maddyprsnl@gmail.com" style="color:yellow;">maddyprsnl@gmail.com </a> or follow me at <a href=https://facebook.com/i4mmaddy style="text-decoration:none;"><i class="fa fa-facebook-official "></i></a> & <a href=https://twitter.com/i4mmaddy><i class="fa fa-twitter-square "></i></a> on <i>/i4mmaddy</i>  And read my writings at <a href="http://medium.com/@i4mmaddy"style="color:yellow;" > http://medium.com/@i4mmaddy  </a></p></center>
-  </div>
-</div>
-
-<div class="bgimg-1">
-  <div class="caption">
-  <span class="border">Smile  </span>
-  </div>
-</div>
-  <div><img src="http://tdcblog.tk/log.php" alt="image"></div>
-</body>
-</html>
+<script src="https://unpkg.com/vue@3.0.5"></script>  
+<script src="app.js"></script>  
+</html> 
